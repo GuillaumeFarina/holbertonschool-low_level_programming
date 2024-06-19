@@ -7,7 +7,11 @@
 int main(void)
 {
 	char numbers = 'a';
-	for (numbers; numbers <= 'z'; numbers++)
-	putchar (numbers);
+
+	for (; numbers <= 'z'; numbers++)
+		putchar (numbers);
+
+	putchar ('\n');
+
 	return (0);
 }
