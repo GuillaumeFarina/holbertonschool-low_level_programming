@@ -6,9 +6,8 @@
  */
 int main(void)
 {
-	   char numbers = 'a';
-	   for (numbers; numbers <= 'z';   
-	   putchar(numbers);
-
-	   return 0;
+	char numbers = 'a';
+	for (numbers; numbers <= 'z'; char_variable++);
+	putchar (numbers);
+	return (0);
 }
