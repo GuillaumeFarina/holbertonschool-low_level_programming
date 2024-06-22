@@ -14,6 +14,7 @@ void times_table(void)
 		{
 			if (multiple * num < 10)
 			{
+				_putchar(' ');
 				_putchar((multiple * num) + '0');
 			}
 			else
@@ -24,7 +25,6 @@ void times_table(void)
 			if (num < 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 		}
 	_putchar('\n');
