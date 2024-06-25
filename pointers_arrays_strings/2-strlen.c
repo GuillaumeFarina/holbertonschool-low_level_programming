@@ -2,6 +2,7 @@
 
 /**
  * _strlen - Write 'function that returns the length of a string'
+ * @s: pointer of string lenght
  * Return: 0
  */
 
