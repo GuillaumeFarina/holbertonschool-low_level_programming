@@ -2,10 +2,10 @@
 
 /**
  * *_memset - Write 'function that fills memory with a constant byte'
- * @s: return pointer to memory
- * @b: specify value
+ * @dest: return pointer to memory
+ * @src: specify value
  * @n: memory zone
- * Return: s
+ * Return: dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
