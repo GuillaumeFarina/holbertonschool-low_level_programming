@@ -2,7 +2,8 @@
 
 /**
  * print_rev_recursion - Write 'function that prints a string, in reverse'
- *@s: character to check
+ * @s: character to check
+ * Return: close loop
  */
 
 void _print_rev_recursion(char *s)
