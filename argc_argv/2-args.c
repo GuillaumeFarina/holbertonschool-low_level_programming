@@ -9,8 +9,7 @@
 
 int main(__attribute__((unused))int argc, char **argv)
 {
-	while (argv--);
-
+	while (argc--)
 	printf("%s\n", argv++);
 	return (0);
 }
