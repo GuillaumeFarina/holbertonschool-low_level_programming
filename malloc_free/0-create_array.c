@@ -20,6 +20,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+	if (size == 0)
+	{
+		return (NULL);
+	}
 	for (index = 0; index < size; index++)
 	{
 		array[index] = c;
