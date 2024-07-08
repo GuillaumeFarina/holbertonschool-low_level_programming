@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - Write 'function that returns a pointer to a newly allocated space in memory'
+ * *_strdup - Write 'function that returns a pointer
+ * to a newly allocated space in memory'
  * @str: string to duplicate
- * Return: NULL if str=NULL and
+ * Return: NULL if str=NULL, array if works
  */
 
 char *_strdup(char *str)
