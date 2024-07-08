@@ -20,7 +20,8 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (; str[len]; len++)
+	{
 		array[len] = str[len];
-
+	}
 	return (array);
 }
