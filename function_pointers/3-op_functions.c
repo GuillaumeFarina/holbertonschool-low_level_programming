@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 
 /**
  * op_add - Write 'function additional two variable'
@@ -40,11 +40,16 @@ int op_mul(int a, int b)
  * op_div - Write 'function divide two variable'
  * @a: first variable
  * @b: second variable
- * Return: divide of a and b
+ * Return: divide of a and b or 100 if error
  */
 
 int op_div(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a / b);
 }
 
@@ -52,10 +57,15 @@ int op_div(int a, int b)
  * op_mod - Write 'function modulo two variable'
  * @a: first variable
  * @b: second variable
- * Return: modulo of a and b
+ * Return: modulo of a and b or 100 if error
  */
 
 int op_mod(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a % b);
 }
