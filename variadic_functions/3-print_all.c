@@ -1,42 +1,43 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - Prints 'character'
- * @ap: variables arguments
+ * print_char - prints character.
+ * @ap: variable arguments.
  */
 
-void print_char(va_list ap)
+void	print_char(va_list ap)
 {
 	printf("%c", va_arg(ap, int));
 }
 
 /**
- * print_float - Prints 'float number'
- * @ap: variables arguments
+ * print_float - prints float number.
+ * @ap: variable arguments
  */
 
-void print_float(va_list ap)
+void	print_float(va_list ap)
 {
-	printf("%f", va_argp(ap, double));
+	printf("%f", va_arg(ap, double));
 }
 
 /**
- * print_int - Prints 'integer'
- * @ap: variables arguments
+ * print_int - prints integer.
+ * @ap: variable arguments
  */
-void print_int(va_list ap)
+
+void	print_int(va_list ap)
 {
 	printf("%d", va_arg(ap, int));
 }
 
 /**
- * print_string - Prints 'string'
- * @ap: variables arguments
+ * print_string - prints string.
+ * @ap: variable arguments.
  */
 
-void print_string(va_list ap)
+void	print_string(va_list ap)
 {
-	char *s = va_arg(ap, char*);
+	char	*s = va_arg(ap, char*);
 
 	if (!s)
 		s = "(nil)";
@@ -44,11 +45,11 @@ void print_string(va_list ap)
 }
 
 /**
- * print_all - Write 'function that prints anything'
- * @format: list of types of arguments passed to the function
+ * print_all - prints anything.
+ * @format: list of types of arguments passed to the function.
  */
 
-void print_all(const char * const format, ...)
+void	print_all(const char * const format, ...)
 {
 	format_specifier_t specifiers[] = {
 		{'c', print_char},
@@ -59,8 +60,8 @@ void print_all(const char * const format, ...)
 	};
 
 	va_list ap;
-	int index = 0, j;
-	char *separator = "";
+	int	index = 0, j;
+	char	*separator = "";
 
 	va_start(ap, format);
 	while (format && format[index])
