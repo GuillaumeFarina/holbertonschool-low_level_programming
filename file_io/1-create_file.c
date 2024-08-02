@@ -2,7 +2,7 @@
 
 /**
 *create_file - Create 'function that creates a file'
-*@filename: name of th file
+*@filename: name of the file
 *@text_content: NULL terminated string to write to the file
 *Return: 1 if success, 0 if fail
 */
@@ -16,7 +16,7 @@ int	create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (fd == -1)
 	{
